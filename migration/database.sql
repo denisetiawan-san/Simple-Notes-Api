@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS your_db_name;
-USE your_db_name;
+CREATE DATABASE IF NOT EXISTS nama_db_kamu;
+USE nama_db_kamu;
 
 CREATE TABLE notes (
 	id INT AUTO_INCREMENT PRIMARY KEY,
