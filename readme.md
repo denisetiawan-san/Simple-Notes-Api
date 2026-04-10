@@ -108,5 +108,4 @@ curl.exe -X PATCH http://localhost:8080/notes/3/unarchive
 delete
 curl.exe -X DELETE http://localhost:8080/notes/3
 
-by = denisetiawan-san (api builder).
-test
+by = denisetiawan-san (api builder)
