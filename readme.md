@@ -1,3 +1,4 @@
+=======================================================================
 simple API notes with dependency service-repository pattern,
 dengan CRUD lengkap + Soft Delete (Archive/Unarchive) + Filtering
 
@@ -78,14 +79,14 @@ setup project
 - copy/rename .env.example menjadi .env dan setting isinya sesuai database kamu
 - kemudian di path /cmd/server jalankan perintah go run . untuk jalankan servernya
 - pastikan sebelum jalankan go run . mysql sudah dihidupkan agar tidak error
+- pastikan sebelum jalankan go run . mysql sudah dihidupkan agar tidak error
+- akses url ini di browser untuk lihat hasilnya http://localhost:8080/notes
 
 test api menggunakan curl gitbash
 
 perintah curl terminal git bash
 create
-curl.exe -X POST http://localhost:8080/notes
--H "Content-Type: application/json"
--d '{ "title": "Belajar Clean Code", "content": "Refactor ala senior" }'
+curl.exe -X POST http://localhost:8080/notes -H "Content-Type: application/json" -d '{ "title": "Belajar Clean Code", "content": "Refactor ala senior" }'
 
 read
 curl.exe http://localhost:8080/notes
@@ -94,9 +95,7 @@ read by id
 curl.exe http://localhost:8080/notes/3
 
 update
-curl.exe -X PUT http://localhost:8080/notes/3
--H "Content-Type: application/json"
--d '{ "title": "Updated Title", "content": "Updated content" }'
+curl.exe -X PUT http://localhost:8080/notes/3 -H "Content-Type: application/json" -d '{ "title": "Updated Title", "content": "Updated content" }'
 
 archive
 curl.exe -X PATCH http://localhost:8080/notes/3/archive
@@ -109,3 +108,5 @@ curl.exe -X PATCH http://localhost:8080/notes/3/unarchive
 
 delete
 curl.exe -X DELETE http://localhost:8080/notes/3
+
+by = denisetiawan-san (api builder).
