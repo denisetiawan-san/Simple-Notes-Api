@@ -79,7 +79,6 @@ setup project
 - copy/rename .env.example menjadi .env dan setting isinya sesuai database kamu
 - kemudian di path /cmd/server jalankan perintah go run . untuk jalankan servernya
 - pastikan sebelum jalankan go run . mysql sudah dihidupkan agar tidak error
-- pastikan sebelum jalankan go run . mysql sudah dihidupkan agar tidak error
 - akses url ini di browser untuk lihat hasilnya http://localhost:8080/notes
 
 test api menggunakan curl gitbash
